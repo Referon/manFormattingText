@@ -1,7 +1,8 @@
 fun main() {
-    val likes = 482
+    val likes = 211
     val outputLastDigit = likes % 10
-    val result = if (outputLastDigit == 1) {
+    val output2Digit = likes % 100
+    val result = if (outputLastDigit == 1 && output2Digit != 11 ) {
         "Понравилось $likes человеку"
     } else {
         "Понравилось $likes людям"
